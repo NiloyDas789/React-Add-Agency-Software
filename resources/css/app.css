@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.msl-vars {
+  --menu-max-height: 250px !important;
+}
+
+th:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+th:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+select {
+  @apply border-slate-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm;
+}
+
+.switch input:checked ~ .switch-body {
+  @apply bg-slate-600;
+}
+.switch input:checked ~ .dot {
+  @apply translate-x-4;
+}
+
+.msl-vars {
+  --input-width: 100% !important;
+}
+
+.msl:not(.msl-active, .msl-active-up),
+.msl:not(.msl-active, .msl-active-up):hover {
+  @apply border-slate-300 rounded-md shadow-sm !important;
+}
